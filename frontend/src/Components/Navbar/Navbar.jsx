@@ -21,7 +21,6 @@ const Navbar = () => {
           }}
         >
           Shop {menu === "shop" ? <hr /> : <></>}
-          <hr />
         </li>
 
         <li
@@ -29,7 +28,7 @@ const Navbar = () => {
             setMenu("mens");
           }}
         >
-          Men {menu === "men" ? <hr /> : <></>}
+          Men {menu === "mens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
