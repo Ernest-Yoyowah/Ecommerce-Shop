@@ -28,21 +28,21 @@ const Navbar = () => {
             setMenu("mens");
           }}
         >
-          Men
+          Men {menu === "men" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("women");
           }}
         >
-          Women
+          Women {menu === "women" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("kids");
           }}
         >
-          Kids
+          Kids {menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
