@@ -32,28 +32,39 @@ const Navbar = () => {
             setMenu("mens");
           }}
         >
-          <Link to="/men">Men</Link> {menu === "mens" ? <hr /> : <></>}
+          <Link to="/men" style={{ textDecoration: "none" }}>
+            Men
+          </Link>{" "}
+          {menu === "mens" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("women");
           }}
         >
-          <Link to="/women">Women</Link> {menu === "women" ? <hr /> : <></>}
+          <Link to="/women" style={{ textDecoration: "none" }}>
+            Women
+          </Link>{" "}
+          {menu === "women" ? <hr /> : <></>}
         </li>
         <li
           onClick={() => {
             setMenu("kids");
           }}
         >
-          <Link to="/kids">Kids</Link> {menu === "kids" ? <hr /> : <></>}
+          <Link to="/kids" style={{ textDecoration: "none" }}>
+            Kids
+          </Link>{" "}
+          {menu === "kids" ? <hr /> : <></>}
         </li>
       </ul>
       <div className="nav-login-cart">
         <button>
-          <Link to="/login">Login</Link>
+          <Link to="/login" style={{ textDecoration: "none" }}>
+            Login
+          </Link>
         </button>
-        <Link to="/cart">
+        <Link to="/cart" style={{ textDecoration: "none" }}>
           <img src={cart_icon} alt="login-cart" />
         </Link>
         <div className="nav-cart-count">0</div>
