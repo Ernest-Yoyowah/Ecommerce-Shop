@@ -21,7 +21,10 @@ const Navbar = () => {
             setMenu("shop");
           }}
         >
-          <Link to="/">Shop</Link> {menu === "shop" ? <hr /> : <></>}
+          <Link to="/" style={{ textDecoration: "none" }}>
+            Shop
+          </Link>{" "}
+          {menu === "shop" ? <hr /> : <></>}
         </li>
 
         <li
@@ -47,8 +50,12 @@ const Navbar = () => {
         </li>
       </ul>
       <div className="nav-login-cart">
-        <button>Login</button>
-        <img src={cart_icon} alt="login-cart" />
+        <button>
+          <Link to="/login">Login</Link>
+        </button>
+        <Link to="/cart">
+          <img src={cart_icon} alt="login-cart" />
+        </Link>
         <div className="nav-cart-count">0</div>
       </div>
     </div>
